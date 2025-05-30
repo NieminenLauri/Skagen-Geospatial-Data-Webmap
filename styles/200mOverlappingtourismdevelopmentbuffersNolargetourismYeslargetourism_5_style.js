@@ -12,7 +12,9 @@ var style_200mOverlappingtourismdevelopmentbuffersNolargetourismYeslargetourism_
                 color: 'rgba(55,126,184,1.0)',
                 width: 1.748
             }),
-            fill: hatchFill,
+            fill: new ol.style.Fill({
+                color: 'rgba(55,126,184,0.3)' // näkyvä täyttö
+            }),
             text: createTextStyle(
                 feature, resolution, labelText, labelFont,
                 labelFill, placement, bufferColor, bufferWidth
