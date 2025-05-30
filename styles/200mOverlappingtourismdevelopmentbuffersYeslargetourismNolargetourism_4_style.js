@@ -1,3 +1,23 @@
+function createRedHatchPattern() {
+    const canvas = document.createElement('canvas');
+    canvas.width = 8;
+    canvas.height = 8;
+    const context = canvas.getContext('2d');
+
+    context.strokeStyle = 'rgba(228,26,28,0.6)'; // punainen viiva
+    context.lineWidth = 1;
+    context.beginPath();
+    context.moveTo(0, 8);
+    context.lineTo(8, 0);
+    context.stroke();
+
+    return context.createPattern(canvas, 'repeat');
+}
+
+const redHatchFill = new ol.style.Fill({
+    color: createRedHatchPattern()
+});
+
 var style_200mOverlappingtourismdevelopmentbuffersYeslargetourismNolargetourism_4 = function(feature, resolution) {
     var labelText = ""; 
     var labelFont = "10px sans-serif";
@@ -15,9 +35,7 @@ var style_200mOverlappingtourismdevelopmentbuffersYeslargetourismNolargetourism_
                 lineJoin: 'bevel',
                 lineDash: null
             }),
-            fill: new ol.style.Fill({
-                color: 'rgba(228,26,28,0.3)' // hieman läpinäkyvä punainen täyttö
-            }),
+            fill: redHatchFill,
             text: createTextStyle(
                 feature, resolution, labelText, labelFont,
                 labelFill, placement, bufferColor, bufferWidth
