@@ -71,7 +71,7 @@ var lyr_200mOverlappingtourismdevelopmentbuffersYeslargetourismNolargetourism_4 
                 style: style_200mOverlappingtourismdevelopmentbuffersYeslargetourismNolargetourism_4,
                 popuplayertitle: '200m Overlapping tourism development buffers (Yes large tourism - No large tourism)',
                 interactive: false,
-                title: '<img src="styles/legend/200mOverlappingtourismdevelopmentbuffersYeslargetourismNolargetourism_4.png" /> 200m Overlapping tourism development buffers (Yes large tourism - No large tourism)'
+                title: '<img src="styles/legend/legend_hatch_red_framed_16x16.png" /> 200m Overlapping tourism development buffers (Yes large tourism - No large tourism)'
             });
 var format_200mOverlappingtourismdevelopmentbuffersNolargetourismYeslargetourism_5 = new ol.format.GeoJSON();
 var features_200mOverlappingtourismdevelopmentbuffersNolargetourismYeslargetourism_5 = format_200mOverlappingtourismdevelopmentbuffersNolargetourismYeslargetourism_5.readFeatures(json_200mOverlappingtourismdevelopmentbuffersNolargetourismYeslargetourism_5, 
@@ -86,7 +86,7 @@ var lyr_200mOverlappingtourismdevelopmentbuffersNolargetourismYeslargetourism_5 
                 style: style_200mOverlappingtourismdevelopmentbuffersNolargetourismYeslargetourism_5,
                 popuplayertitle: '200m Overlapping tourism development buffers (No large tourism - Yes large tourism)',
                 interactive: false,
-                title: '<img src="styles/legend/200mOverlappingtourismdevelopmentbuffersNolargetourismYeslargetourism_5.png" /> 200m Overlapping tourism development buffers (No large tourism - Yes large tourism)'
+                title: '<img src="styles/legend/legend_hatch_blue_framed_16x16.png" /> 200m Overlapping tourism development buffers (No large tourism - Yes large tourism)'
             });
 var format_Pargaslandscapevaluesbuffered100m_6 = new ol.format.GeoJSON();
 var features_Pargaslandscapevaluesbuffered100m_6 = format_Pargaslandscapevaluesbuffered100m_6.readFeatures(json_Pargaslandscapevaluesbuffered100m_6, 
